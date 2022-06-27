@@ -21,8 +21,8 @@ A <strong>ReactJs</strong> + <strong>GraphQL</strong> + <strong>Tailwind</strong
 <h2 id="Sreenshots">Screenshots</h2>
 
 <p align="center">
- <img src="https://github.com/RafaelMariscal/first-link/blob/main/Login-Page.png" width="500px"/>
- <img src="https://github.com/RafaelMariscal/first-link/blob/main/Event-Page.png" width="500px"/>
+ <img src="https://github.com/RafaelMariscal/Event-video-platform/blob/main/src/assets/Login-Page-Screenshot.png" width="400px"/>
+ <img src="https://github.com/RafaelMariscal/Event-video-platform/blob/main/src/assets/Event-Page-Screenshot.png" width="400px"/>
 </p>
 
 <h2 id="About">About</h2>
