@@ -1,11 +1,5 @@
 
-<h1> Video Platform for Events </h1>
-
-A <strong>ReactJs</strong> + <strong>GraphQL</strong> + <strong>Tailwind</strong> project built during the Ignite Lab Bootcamp, provided by <a href="https://www.rocketseat.com.br/">Rocketseat Programming School</a>, the largest programming school in Brazil.
-
-<h2>Sumary</h2>
-
-<p> 
+<p align="center"> 
   <a href="#Sreenshots">Sreenshots</a>  | |  
   <a href="#About">About</a>  | |  
   <a href="#Techs">Techs, Libs and Plugins</a>  | |  
@@ -16,7 +10,15 @@ A <strong>ReactJs</strong> + <strong>GraphQL</strong> + <strong>Tailwind</strong
 
 </br>
 
+<h1> Video Platform for Events </h1>
+
+A <strong>ReactJs</strong> + <strong>GraphQL</strong> + <strong>Tailwind</strong> project built during the Ignite Lab Bootcamp, provided by <a href="https://www.rocketseat.com.br/">Rocketseat Programming School</a>, the largest programming school in Brazil.
+
+</br>
+
 > Project deployed using <a href="https://vercel.com/docs">vercel</a>. To access this project, follow the link: | > <a href="https://event-video-platform.vercel.app/"><strong>event-video-platform.vercel.app/</strong></a> < |
+
+</br>
 
 <h2 id="Sreenshots">Screenshots</h2>
 
@@ -36,14 +38,15 @@ Just beacause this project idea is to <strong>build a mockup web application for
 <h2 id="Techs">Techs, Libs and Plugins</h2>
 
 In this project, it was used Techs, Libs and Plugins to provide a better understanding of how a web application is actually built. Follow the list bellow to access all the techs/libs/plugins documantations:
-<p>
+
+<p align="center">
   <a href="https://www.apollographql.com/docs/react">Apollo</a> | | 
-  <a href="https://vimejs.com/getting-started/installation">VimeJS</a> | | 
   <a href="https://graphcms.com/docs/guides/getting-started/create-a-project">GraphCMS</a> | |
   <a href="https://www.graphql-code-generator.com/docs/getting-started">GraphQL-Code-Generator</a> | |
+  <a href="https://vimejs.com/getting-started/installation">VimeJS</a> | | 
   <a href="https://date-fns.org/docs/Getting-Started">Date-fns</a> | | 
-  <a href="https://phosphoricons.com/">Phosphor-react</a> | | 
   <a href="https://tailwindcss.com/docs/installation">Tailwind</a> 
+  <a href="https://phosphoricons.com/">Phosphor-react</a> | | 
 </p>
 
 <h2 id="Functionalities">Functionalities</h2>
@@ -86,18 +89,44 @@ There may be some WARNING like:
 This is related to @vimejs, and <strong>it will not break the application</strong>. There is an issue on @vimejs github related to this error, to know more about it access this link:  <a href="https://github.com/vitejs/vite/issues?q=The+above+dynamic+import+cannot+be+analyzed+by+vite.+">github.com/vitejs/vite/issues</a> .
 
 Clone the GraphCMS database schema in the link : 
+
 [![Clone project](https://graphcms.com/button)](https://app.graphcms.com/clone/31d3a300b4ff4936a6629512015b2f6b?name=Ignite%20Lab%20-%20Rafael%20Mariscal)
 
-At projet root diretory run create a .env.local file with these environment variables:
+At projet root diretory, you need to create a .env.local file with these environment variables:
 - VITE_API_URL={GraphCMS Content API URL}
 - VITE_API_ACCESS_TOKEN={GraphCMS Permanent Auth Token Value}
 
-At first run and also every time that changes were made at GraphCMS Project, 
+Also at project root diretory, at the file <strong>codegen.yml</strong>, you need to set the <strong>schema</strong> to the GraphCMS Content API URL, like this:
+    
+    schema: {GaphCMS Content API URL}
+
+    documents: './src/graphql/**/*.graphql'
+
+    generates:
+      ./src/graphql/generated.ts:
+        plugins:
+          - typescript
+          - typescript-operations
+          - typescript-react-apollo
+        config:
+          reactApolloVersion: 3
+          withHooks: true
+          withHOC: false
+          withComponent: false
+
+
+At first run, and also every time that changes were made at GraphCMS Project run:
 
     npm run codegen
+
+Finaly, to run the development version just run this command line:
+
     npm run dev
 
-The deploy was made using <a href="https://vercel.com/docs">Vercel</a>. So, if you want to deploy your project, just follow the instructions to link your github repository to vercel, then cofigure the deploy and run it. Access the Vercel docs <a href="https://vercel.com/docs">here</a>.
+</br>
+
+> The deploy was made using <a href="https://vercel.com/docs">Vercel</a>. So, if you want to deploy your project, just follow the instructions to link your github repository to vercel, then cofigure the deploy and run it. Follow the link bellow to access <a href="https://vercel.com/docs">Vercel Documentation</a>.
+
 </p>
 
 
@@ -106,6 +135,7 @@ The deploy was made using <a href="https://vercel.com/docs">Vercel</a>. So, if y
 You can send how many PR's do you want, I'll be glad to analyse and accept them! And if you have any question about the project...
 
 Email-me: <a href="mailto: rafael_mariscal_@outlook.com">rafael_mariscal_@outlook.com</a>
+
 Connect with me at  <a href="https://www.linkedin.com/in/rafael-mariscal/">LinkedIn</a>
 
 Thank you!
