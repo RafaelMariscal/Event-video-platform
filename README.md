@@ -40,13 +40,16 @@ Just beacause this project idea is to <strong>build a mockup web application for
 In this project, it was used Techs, Libs and Plugins to provide a better understanding of how a web application is actually built. Follow the list bellow to access all the techs/libs/plugins documantations:
 
 <p align="center">
-  <a href="https://www.apollographql.com/docs/react">Apollo</a> | | 
+  <a href="https://pt-br.reactjs.org/docs/getting-started.html">React</a> | | 
+  <a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html">Typescript</a> | | 
+  <a href="https://graphcms.com/docs/guides/getting-started/create-a-project">GraphQL</a> | |
   <a href="https://graphcms.com/docs/guides/getting-started/create-a-project">GraphCMS</a> | |
   <a href="https://www.graphql-code-generator.com/docs/getting-started">GraphQL-Code-Generator</a> | |
+  <a href="https://www.apollographql.com/docs/react">Apollo Client</a> | | 
   <a href="https://vimejs.com/getting-started/installation">VimeJS</a> | | 
   <a href="https://date-fns.org/docs/Getting-Started">Date-fns</a> | | 
-  <a href="https://tailwindcss.com/docs/installation">Tailwind</a> 
-  <a href="https://phosphoricons.com/">Phosphor-react</a> | | 
+  <a href="https://tailwindcss.com/docs/installation">Tailwind</a> | | 
+  <a href="https://phosphoricons.com/">Phosphor-react</a> 
 </p>
 
 <h2 id="Functionalities">Functionalities</h2>
