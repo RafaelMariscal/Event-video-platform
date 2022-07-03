@@ -21,4 +21,4 @@ export function Event() {
       </main>
     </div>
   )
-}
+} 
