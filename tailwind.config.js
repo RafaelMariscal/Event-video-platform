@@ -5,10 +5,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        blurBackground: 'url(/src/assets/blur-background.png)',
-        codeMockup: 'url(/src/assets/code-mockup.png)'
-      },
       fontFamily: {
         sans: 'Roboto, sans-serif'
       },
@@ -39,6 +35,7 @@ module.exports = {
       },
       backgroundImage: {
         blur: 'url(/src/assets/blur-background.png)',
+        codeMockup: 'url(/src/assets/code-mockup.png)'
       },
     },
   },

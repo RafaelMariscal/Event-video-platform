@@ -33,7 +33,7 @@ export function Subscribe() {
           <div className="flex justify-center lg:block">
             <Logo />
           </div>
-          <h1 className="mt-8 text-[1.875rem] lg:text-[2.5rem] leading-tight">
+          <h1 className="mt-8 text-[1.875rem] md:text-[2.3rem] lg:text-[2.5rem] leading-tight">
             Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
           </h1>
           <p className="mt-4 text-[.875rem] lg:text-[1rem] text-gray-200 leading-relaxed">
@@ -41,7 +41,7 @@ export function Subscribe() {
           </p>
         </div>
 
-        <div className="p-8 lg:my-0 bg-gray-700 rounded border-gray-500 border">
+        <div className="p-8 lg:my-0 bg-gray-700 rounded border-gray-500 border w-full sm:w-max">
           <strong className="md:text-2xl text-[1.15rem] md:text-start text-center mb-6 block">Inscreva-se gratuitamente</strong>
 
           <form
@@ -49,7 +49,7 @@ export function Subscribe() {
             onSubmit={handleSubscribe}
           >
             <input
-              className="lg:bg-gray-900 focus:outline outline-2 outline-green-500 bg-gray-600 rounded px-5 h-14"
+              className="bg-gray-900 focus:outline outline-2 outline-green-500 rounded px-5 h-12 lg:h-14"
               type="text"
               name="name"
               placeholder="Seu nome completo"
@@ -57,7 +57,7 @@ export function Subscribe() {
             />
 
             <input
-              className="lg:bg-gray-900 focus:outline outline-2 outline-green-500 bg-gray-600 rounded px-5 h-14"
+              className="bg-gray-900 focus:outline outline-2 outline-green-50 rounded px-5 h-12 lg:h-14"
               type="email"
               name="email"
               placeholder="Digite seu email"
@@ -74,8 +74,10 @@ export function Subscribe() {
           </form>
         </div>
       </div>
-      <div className="bg-blurBackground visible-[hidden] lg:visible lg:h-[650px] lg:w-[1216px]" />
+      <div className="bg-codeMockup bg-center bg-contain h-[235px] w-[362px] lg:h-[40.5rem] lg:w-[76rem]" />
       <Footer />
     </div >
   )
 }
+
+/* h-[650px] w-[1216px] lg:h-[650px] lg:w-[1216px] */
