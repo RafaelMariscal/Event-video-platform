@@ -1,4 +1,4 @@
-import { RocketseatLogo } from './RocketSeatLogo'
+import { RocketseatLogo } from '../components/RocketseatLogo'
 
 export default function Footer() {
   return (
