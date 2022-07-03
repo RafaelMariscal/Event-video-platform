@@ -21,14 +21,12 @@ export function Subscribe() {
         email
       }
     })
-
     navigate('/event')
-
   }
 
   return (
     <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center overflow-hidden">
-      <div className="w-full md:p-5 max-w-[1100px] flex lg:flex-row flex-col items-center justify-between mt-28 mx-auto">
+      <div className="w-full md:p-5 max-w-[1150px] flex lg:flex-row flex-col items-center justify-between mt-10 lg:mt-20 mx-auto">
         <div className="max-w-[640px] lg:px-0 mb-10 px-8 m-auto text-center lg:text-left">
           <div className="flex justify-center lg:block">
             <Logo />
