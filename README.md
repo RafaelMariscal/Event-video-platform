@@ -1,7 +1,8 @@
 
 <p align="center"> 
-  <a href="#Sreenshots">Sreenshots</a>  | |  
   <a href="#About">About</a>  | |  
+  <a href="#Improve">Improvements</a>  | |  
+  <a href="#Sreenshots">Sreenshots</a>  | |  
   <a href="#Techs">Techs, Libs and Plugins</a>  | |  
   <a href="#Functionalities">Functionalities</a> | |
   <a href="#GettingStarted">GettingStarted</a> | |
@@ -10,34 +11,46 @@
 
 </br>
 
-<h1> Video Platform for Events </h1>
+<h1 id="About"> Video Platform for Events </h1>
 
-A <strong>ReactJs</strong> + <strong>GraphQL</strong> + <strong>Tailwind</strong> project built during the Ignite Lab Bootcamp, provided by <a href="https://www.rocketseat.com.br/">Rocketseat Programming School</a>, the largest programming school in Brazil.
+<p align="justify">
+A <strong>ReactJs</strong> + <strong>GraphQL</strong> + <strong>Tailwind</strong> project built during IgniteLab Bootcamp, provided by <a href="https://www.rocketseat.com.br/">Rocketseat Programming School</a>, the largest programming school in Brazil. You can access all the technologies, libs and plugins used in this project <a href="Techs">HERE</a>.
+</p>
 
-</br>
+<p align="justify">
+<strong>Tailwind</strong> was used in this project for productivity reasons, making it easier to build the frontend, just like the <strong>GraphCMS</strong> and <strong>GraphQL Code Generator</strong>, but to make it easier to code the graphQL requests.
+</p>
+
+<p align="justify">
+It's important to mention that, when using <strong>GraphCMS</strong> to subscribe data, its crucial <strong>to set a backend to intermediate all requests</strong>, for safety reasons. Just beacause this project idea is to <strong>build a mockup web application for video events</strong>, the frontend will deal with all the mutations requisitions. With that said, feel free to use this repo as you wish.
+</p>
+
+<h1 id="Improve">Project Improvements</h1>
+
+<p align="justify">
+In adition to main event project, it was fixed the image source to be reconized by Vercel. Also, a responsive desing was implemented for both pages[ Subscription and Event ], with "menu sandwich", according to the Figma project. If you want to access the Figma Project <a href="https://www.figma.com/file/nHUgBXbnzsJv0rmTFozEtj/Plataforma-de-evento---Ignite-Lab-(Community)">HERE</a> </br> </br>
+</p>
 
 > Project deployed using <a href="https://vercel.com/docs">vercel</a>. To access this project, follow the link: | > <a href="https://event-video-platform.vercel.app/"><strong>event-video-platform.vercel.app/</strong></a> < |
+
 
 </br>
 
 <h2 id="Sreenshots">Screenshots</h2>
 
 <p align="center">
+
+ <img src="https://media.giphy.com/media/8hxL3hPVgKyPNhkFzc/giphy.gif" width="400px"/>
+ <img src="https://media.giphy.com/media/f1wpDedGKg67kOFq17/giphy.gif" width="400px"/>
  <img src="https://github.com/RafaelMariscal/Event-video-platform/blob/main/src/assets/Login-Page-Screenshot.png" width="400px"/>
  <img src="https://github.com/RafaelMariscal/Event-video-platform/blob/main/src/assets/Event-Page-Screenshot.png" width="400px"/>
 </p>
 
-<h2 id="About">About</h2>
-
-A <strong>ReactJs</strong> and <strong>GraphQL</strong> project built during the Ignite Lab Bootcamp. It's important to mention that, when using <strong>GraphCMS</strong> to subscribe data, its crucial <strong>to set a backend to intermediate the mutations requests</strong>, for safety reasons and also to handle the request data.
-
-<strong>Tailwind</strong> was used in this project for productivity reasons, making it easier to build the frontend, just like the <strong>GraphCMS</strong> and <strong>GraphQL Code Generator</strong>, but to make it easier to code the graphQL requests.
-
-Just beacause this project idea is to <strong>build a mockup web application for video events</strong>, the frontend will deal with all the mutations requisitions. With that said, feel free to use this repo as you wish.
-
 <h2 id="Techs">Techs, Libs and Plugins</h2>
 
+<p align="justify">
 In this project, it was used Techs, Libs and Plugins to provide a better understanding of how a web application is actually built. Follow the list bellow to access all the techs/libs/plugins documantations:
+</p>
 
 <p align="center">
   <a href="https://pt-br.reactjs.org/docs/getting-started.html">React</a> | | 
@@ -76,13 +89,14 @@ In this project, it was used Techs, Libs and Plugins to provide a better underst
 
 <h2 id="GettingStarted">GettingStarted</h2>
 
-    git clone git@github.com:RafaelMariscal/Event-video-platform.git
-    cd Event-video-platform
-    npm i
-<p>
+    $ git clone git@github.com:RafaelMariscal/Event-video-platform.git
+    $ cd Event-video-platform
+    $ npm i
+
+<p align="justify">
 When this project was built, vimejs still didn't support 100% react 18.0.0. Because this project didn't used any of the new functionalities of react 18.0.0, if there is an error installing this dependency, just force the installation by using:
 
-    npm i @vime/core @vime/react --force
+    $ npm i @vime/core @vime/react --force
 
 
 There may be some WARNING like:  
@@ -120,11 +134,11 @@ Also at project root diretory, at the file <strong>codegen.yml</strong>, you nee
 
 At first run, and also every time that changes were made at GraphCMS Project run:
 
-    npm run codegen
+    $ npm run codegen
 
 Finaly, to run the development version just run this command line:
 
-    npm run dev
+    $ npm run dev
 
 </br>
 
